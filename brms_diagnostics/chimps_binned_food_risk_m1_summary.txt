@@ -1,0 +1,33 @@
+ Family: student 
+  Links: mu = identity; sigma = identity; nu = identity 
+Formula: y ~ mo(rel_rank_b) + subject_sex + age_b + chimp_group 
+   Data: dz (Number of observations: 86) 
+  Draws: 4 chains, each with iter = 2000; warmup = 1000; thin = 2;
+         total post-warmup draws = 2000
+
+Regression Coefficients:
+             Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+Intercept       -1.08      0.21    -1.51    -0.67 1.00     1332     1590
+subject_sex1     0.49      0.21     0.09     0.91 1.00     1666     1613
+age_b1           0.20      0.20    -0.17     0.58 1.00     1373     1508
+age_b2          -0.03      0.13    -0.29     0.24 1.00     1437     1704
+age_b3          -0.07      0.14    -0.34     0.22 1.00     1608     1863
+chimp_group1    -0.07      0.11    -0.28     0.13 1.00     1823     1787
+chimp_group2    -0.13      0.14    -0.38     0.14 1.00     1731     1722
+morel_rank_b     0.59      0.09     0.43     0.77 1.00     1272     1490
+
+Monotonic Simplex Parameters:
+                 Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+morel_rank_b1[1]     0.20      0.09     0.02     0.38 1.00     1320      832
+morel_rank_b1[2]     0.20      0.10     0.03     0.43 1.00     1497     1203
+morel_rank_b1[3]     0.34      0.11     0.13     0.57 1.00     1710     1725
+morel_rank_b1[4]     0.26      0.10     0.05     0.45 1.00     1759     1518
+
+Further Distributional Parameters:
+      Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sigma     0.67      0.07     0.55     0.81 1.00     1636     1712
+nu       22.07     13.85     5.17    57.34 1.00     1705     1689
+
+Draws were sampled using sampling(NUTS). For each parameter, Bulk_ESS
+and Tail_ESS are effective sample size measures, and Rhat is the potential
+scale reduction factor on split chains (at convergence, Rhat = 1).

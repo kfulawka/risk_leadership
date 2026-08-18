@@ -1,0 +1,26 @@
+ Family: student 
+  Links: mu = identity; sigma = identity; nu = identity 
+Formula: y ~ relative_rank_z + subject_sex + age_b + chimp_group 
+   Data: dz (Number of observations: 86) 
+  Draws: 4 chains, each with iter = 2000; warmup = 1000; thin = 2;
+         total post-warmup draws = 2000
+
+Regression Coefficients:
+                Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+Intercept           0.01      0.11    -0.21     0.24 1.00     1759     1638
+relative_rank_z     0.52      0.15     0.23     0.81 1.01     1214     1693
+subject_sex1        0.29      0.25    -0.22     0.78 1.00     1354     1678
+age_b1              0.02      0.25    -0.48     0.53 1.00     1459     1617
+age_b2              0.14      0.17    -0.20     0.49 1.00     1822     1823
+age_b3             -0.05      0.18    -0.40     0.28 1.00     1828     1856
+chimp_group1       -0.20      0.14    -0.47     0.06 1.00     1631     1537
+chimp_group2        0.08      0.17    -0.26     0.42 1.00     1645     1819
+
+Further Distributional Parameters:
+      Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sigma     0.87      0.09     0.71     1.05 1.00     1639     1589
+nu       21.07     14.06     4.74    56.61 1.00     1608     1506
+
+Draws were sampled using sampling(NUTS). For each parameter, Bulk_ESS
+and Tail_ESS are effective sample size measures, and Rhat is the potential
+scale reduction factor on split chains (at convergence, Rhat = 1).

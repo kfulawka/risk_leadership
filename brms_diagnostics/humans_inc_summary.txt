@@ -1,0 +1,33 @@
+ Family: student 
+  Links: mu = identity; sigma = identity; nu = identity 
+Formula: risk_preference ~ gender + age_b + mo(income_b) 
+   Data: dz (Number of observations: 40072) 
+  Draws: 4 chains, each with iter = 2000; warmup = 1000; thin = 2;
+         total post-warmup draws = 2000
+
+Regression Coefficients:
+           Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+Intercept     -0.13      0.01    -0.15    -0.10 1.00     1690     1955
+gender1       -0.36      0.01    -0.38    -0.34 1.00     1568     1853
+age_b1         0.40      0.01     0.37     0.42 1.00     2048     1972
+age_b2         0.11      0.01     0.09     0.13 1.00     1984     1823
+age_b3        -0.15      0.01    -0.17    -0.14 1.00     1789     1753
+age_b4        -0.17      0.01    -0.19    -0.15 1.00     1986     1796
+moincome_b     0.17      0.01     0.16     0.19 1.00     1843     1604
+
+Monotonic Simplex Parameters:
+               Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+moincome_b1[1]     0.25      0.02     0.21     0.28 1.00     1743     1686
+moincome_b1[2]     0.06      0.02     0.03     0.09 1.00     1487     1410
+moincome_b1[3]     0.09      0.02     0.05     0.13 1.00     1747     1657
+moincome_b1[4]     0.27      0.04     0.20     0.34 1.00     1717     1827
+moincome_b1[5]     0.33      0.04     0.25     0.41 1.00     1886     1768
+
+Further Distributional Parameters:
+      Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sigma     0.95      0.00     0.94     0.95 1.00     1645     1562
+nu      213.86     33.75   156.83   287.24 1.00     1910     1855
+
+Draws were sampled using sampling(NUTS). For each parameter, Bulk_ESS
+and Tail_ESS are effective sample size measures, and Rhat is the potential
+scale reduction factor on split chains (at convergence, Rhat = 1).
