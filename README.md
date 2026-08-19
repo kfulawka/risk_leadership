@@ -4,6 +4,7 @@ This repository contains the R code and supporting files used for the analyses r
 
 **Human and Chimpanzee Leaders Are More Risk-Loving**  
 Lou M. Haux, Kamil Fulawka, Gert G. Wagner, Ralph Hertwig, and Esther Herrmann
+*The Leadership Quarterly*
 
 The repository is organized to reproduce the data processing, statistical models, figures, and model-based results reported in the paper.
 
