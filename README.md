@@ -97,6 +97,12 @@ The R code is released under the MIT License to facilitate transparency, reuse, 
 
 The SOEP human data are not distributed with this repository and are therefore **not covered by the repository's data license**. Their use remains subject to the data-access and licensing conditions of DIW Berlin / SOEP.
 
+## Archived version
+
+The version of this repository corresponding to the accepted manuscript is permanently archived on Zenodo:
+
+[https://doi.org/10.5281/zenodo.22019025](https://doi.org/10.5281/zenodo.22019025)
+
 ## Contact
 
 For questions specifically related to the statistical analyses, please contact:
